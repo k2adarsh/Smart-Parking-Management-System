@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1> Smart Parking Management System</h1>
+        <p>Parking Charge: ₹0.25 every 10 seconds (Demo)</p>
+    </header>
+
+    <section class="stats">
+
+        <div class="box">
+            <h3>Total Slots</h3>
+            <p>20</p>
+        </div>
+
+        <div class="box">
+            <h3>Available</h3>
+            <p id="available">20</p>
+        </div>
+
+        <div class="box">
+            <h3>Occupied</h3>
+            <p id="occupied">0</p>
+        </div>
+
+    </section>
+
+    <section class="controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Vehicle Number">
+
+        <button id="searchBtn">Search</button>
+
+        <button id="resetBtn">Reset Parking</button>
+
+    </section>
+
+    <h2>Parking Slots</h2>
+
+    <div id="parkingLot" class="parking-grid">
+
+    </div>
+
+
+    <!-- Popup -->
+
+    <div class="popup" id="popup">
+
+        <div class="popup-box">
+
+            <h2 id="popupTitle">Check In</h2>
+
+            <input
+                type="text"
+                id="owner"
+                placeholder="Owner Name">
+
+            <input
+                type="text"
+                id="vehicle"
+                placeholder="Vehicle Number">
+
+            <input
+                type="text"
+                id="model"
+                placeholder="Vehicle Model">
+
+            <div id="checkoutInfo"></div>
+
+            <div class="buttons">
+
+                <button id="confirmBtn">
+                    Confirm
+                </button>
+
+                <button id="cancelBtn">
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
